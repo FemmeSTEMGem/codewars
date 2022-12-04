@@ -1,7 +1,16 @@
 // Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
-function evenOrOdd(number) {
-  return number % 2 ? "Even" : "Odd"
+// function evenOrOdd(number) {
+//   return number % 2 ? "Even" : "Odd"
+// }
+
+// console.log(evenOrOdd(7))
+
+
+// This code does not execute properly. Try to figure out why.
+
+function multiply(a, b){
+  return a * b
 }
 
-console.log(evenOrOdd(7))
+console.log(multiply(2, 5))
