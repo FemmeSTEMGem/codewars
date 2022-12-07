@@ -5,3 +5,14 @@ function boolToWord( bool ){
 }
 
 console.log(boolToWord(false))
+
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "")
+}
+
+// Need to update node version, because then I would just use replaceAll, rather than replace
+
+console.log(removeExclamationMarks("vEJhGiAutt!LWNSvOVPPr KWXYAnzuQV!moFlqdfYCh"))
