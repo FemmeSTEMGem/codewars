@@ -74,6 +74,7 @@ function countPositivesSumNegatives(input) {
 
 //? console.log(countPositivesSumNegatives(null))
 
+
 // Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 // 
 // invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
@@ -87,3 +88,22 @@ function invert(array) {
 }
 
 //? console.log(invert([]))
+
+
+// Description:
+// 
+// Write a function which calculates the average of the numbers in a given list.
+// 
+// Note: Empty arrays should return 0.
+
+function findAverage(array) {
+  if (array.length == 0) {
+    return 0
+  }
+  let total = 0
+  array.forEach(element => total += element)
+  return total / array.length
+}
+
+//? console.log(findAverage([]))
+
