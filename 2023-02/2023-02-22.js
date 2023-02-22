@@ -58,12 +58,18 @@ function booleanToString(b){
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
 function countPositivesSumNegatives(input) {
-  let newArray = input.map((element) => {
-    if (true) {
-      return element * 2
+  if ((input == null) || (input.length == 0)) {
+    return []
+  }
+  let newArray = [0, 0]
+  input.forEach((element) => {
+    if (element > 0) {
+      newArray[0] += 1
+    } else {
+      newArray[1] += element
     }
   })
-  // return newArray
+  return newArray
 }
 
-console.log(countPositivesSumNegatives([1, 2, 3, 4]))
+console.log(countPositivesSumNegatives(null))
