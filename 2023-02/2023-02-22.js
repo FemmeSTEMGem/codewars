@@ -35,3 +35,14 @@ function past(h, m, s){
 }
 
 //? console.log(past(0, 1, -1))
+
+
+// Implement a function which convert the given boolean value into its string representation.
+// 
+// Note: Only valid inputs will be given.
+
+function booleanToString(b){
+  return b.toString()
+}
+
+//? console.log(booleanToString(false))
