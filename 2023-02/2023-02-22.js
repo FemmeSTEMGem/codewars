@@ -172,3 +172,23 @@ function reverseWords(str){
 }
 
 //? console.log(reverseWords("The greatest victory is that which requires no battle"))
+
+
+// Description:
+// 
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+// 
+// if bmi <= 18.5 return "Underweight"
+// 
+// if bmi <= 25.0 return "Normal"
+// 
+// if bmi <= 30.0 return "Overweight"
+// 
+// if bmi > 30 return "Obese"
+
+function bmi(weight, height) {
+  let bmiCalc = weight/(height*height)
+  return bmiCalc < 25.0 ? (bmiCalc <= 18.5 ? "Underweight" : "Normal") : (bmiCalc <= 30.0 ? "Overweight" : "Obese")
+}
+
+//? console.log(bmi(80, 1.80))
