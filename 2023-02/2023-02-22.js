@@ -59,11 +59,11 @@ function booleanToString(b){
 
 function countPositivesSumNegatives(input) {
   let newArray = input.map((element) => {
-    // if (true) {
-      element * 2
-    })
-  // })
-  return newArray
+    if (true) {
+      return element * 2
+    }
+  })
+  // return newArray
 }
 
 console.log(countPositivesSumNegatives([1, 2, 3, 4]))
