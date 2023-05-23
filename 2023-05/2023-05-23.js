@@ -17,3 +17,16 @@ function countBy(x, n) {
 }
 
 console.log(countBy(2,5))
+
+
+
+// Make a simple function called greet that returns the most-famous "hello world!".
+
+
+function greet() {
+  let greeting1 = ["h", "e", "l", "l", "o"]
+  let greeting2 = [" ", "w", "o", "r", "l", "d", "!"]
+  return greeting1.join("").concat(greeting2.join(""))
+}
+
+console.log(greet())
