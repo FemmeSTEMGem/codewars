@@ -26,11 +26,20 @@ function getAverage(marks){
 //     0 <= y <= 4
 
 function points(games) {
-  let scores = games.map(x => x.split('')).map(x => Number.parseInt(x))
-  return scores
+  let teamPoints = 0
+  let scores = games.map(x => x.split('')).map(x => x.filter(x => x !== ":")).flat().map(x => Number.parseInt(x))
+  for (let i = 0; i < scores.length; i+=2) {
+    if (scores[i] > scores[i+1]) {
+      teamPoints += 3
+    }
+    if (scores[i] == scores[i+1]) {
+      teamPoints++
+    }
+  }
+  return teamPoints
 }
 
 
 console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
-
-//! Unfinished
+//Ugh, I thought for sure that JavaScript would force you to convert this into numbers before it could understand > and <
+//I'll do it again on another page to show how I'd do it without the clunky conversion
