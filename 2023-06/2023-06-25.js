@@ -24,3 +24,20 @@ function finalGrade (exam, projects) {
 console.log(finalGrade(10, 15))
 console.log(finalGrade(55, 3))
 // I like my solution the best (and so did a lot of voters on CodeWars). Most of the differences were just in the variations between how the information was displayed - basic logic was the same, though.
+
+
+// Messi is a soccer player with goals in three leagues:
+//     LaLiga
+//     Copa del Rey
+//     Champions
+// Complete the function to return his total number of goals in all three leagues.
+// Note: the input will always be valid.
+// For example:
+// 5, 10, 2  -->  17
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+console.log(goals(5, 10, 2))
+// This was a little too simplistic for the difficulty level given. However, in looking at the different answers, I like that people solved for a future problem where there are a lot more parameters than just three and writing their code accordingly: [..args].reduce, etc.
