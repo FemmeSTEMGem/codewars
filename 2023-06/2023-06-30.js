@@ -46,10 +46,8 @@ function fixTheMeerkat(arr) {
   return arr.reverse()
 }
 
-console.log(fixTheMeerkat(["tail", "body", "head"])) // ["head", "body", "tail"]
+// console.log(fixTheMeerkat(["tail", "body", "head"])) // ["head", "body", "tail"]
 // Simple use of the reverse() method
-
-
 
 
 // Create a method to see whether the string is ALL CAPS.
@@ -68,6 +66,21 @@ String.prototype.isUpperCase = function() {
 
 // console.log('c'.isUpperCase()) // false
 // console.log('C'.isUpperCase()) // true
-
-console.log("Hello".split('').filter(x => x == x.toUpperCase()))
 // For some reason I had it in my head that .toUpperCase() could only be used on individual letters rather than a whole string...hence the solution above. Now remembering, I could have just said this == this.toUpperCase()
+
+
+// While making a game, your partner, Greg, decided to create a function to check if the user is still alive called checkAlive/CheckAlive/check_alive. Unfortunately, Greg made some errors while creating the function. 
+// checkAlive/CheckAlive/check_alive should return true if the player's health is greater than 0 or false if it is 0 or below.
+// The function receives one parameter health which will always be a whole number between -10 and 10.
+
+function checkAlive (health) {
+  if (health <= 0) {
+    return false
+  } else {
+    return true
+  }
+}
+
+console.log(checkAlive(5)) // true
+console.log(checkAlive(0)) // false
+// Easy debug
