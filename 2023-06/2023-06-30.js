@@ -11,7 +11,7 @@ function saleHotdogs(n){
   : n * 90
 }
 
-console.log(saleHotdogs(5))
+// console.log(saleHotdogs(5))
 // I've really grown to love chaining ternary operations this way. If I were to do it over, I might structure it like --> n * (n < 5 ? 100), etc. - might make it look tidier, I'm not sure
 
 
@@ -24,5 +24,15 @@ function move (position, roll) {
   return position + roll * 2
 }
 
-console.log(move(3, 6))
+// console.log(move(3, 6))
 // Simple enough, nothing fancy here.
+
+
+// Write a function that takes an argument and returns the square of it.
+
+function square (n){
+  return n**2
+}
+
+console.log(square(3)) //9
+//Oof, too simple for CodeWars I think
