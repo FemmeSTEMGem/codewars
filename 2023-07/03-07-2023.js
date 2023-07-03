@@ -9,3 +9,18 @@ function well(x){
 
 console.log(well(['bad', 'bad', 'bad', 'good', 'good', 'good']))
 // Very happy to see that my solution is likely the best. *little dance*
+
+
+// Write a function stringy that takes a size and returns a string of alternating '1s' and '0s'.
+// - The string should start with a 1.
+// - A string with size 6 should return :'101010'.
+// - With size 4 should return : '1010'.
+// - With size 12 should return : '101010101010'.
+// - The size will always be positive and will only use whole numbers.
+
+function stringy(size) {
+  return size % 2 == 0 ? "10".repeat(size/2) : "10".repeat(size/2) + "1"
+}
+
+console.log(stringy(5))
+// I really like my solution, though looking through the others, I really like the use of padStart to one-line this. It's a lot cleaner too, but I didn't know that padStart would return partial strings in the way that this problem requires. Awesome!
