@@ -14,8 +14,8 @@ console.log(reverseList([1, 2, 3, 4]))
 
 // This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
 
-var a == "code";
-var b == "wa.rs";
-var name == a + b;
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
 // It needs to be a single "=", not two "=="
 // Again, I'm worried that this is too simple for this level of kata.
