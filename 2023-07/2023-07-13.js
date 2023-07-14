@@ -25,3 +25,18 @@ function peopleWithAgeDrink(old) {
 
 console.log(peopleWithAgeDrink(30))
 // Ternary operators are so beautiful for this. Literally never using if/else ever again if I can help it.
+
+
+// Write a function which takes a number and returns the corresponding ASCII char for that value.
+// Example:
+// 65 --> 'A'
+// 97 --> 'a'
+// 48 --> '0
+// For ASCII table, you can refer to http://www.asciitable.com/
+
+function getChar(c){
+  return String.fromCharCode(c)
+}
+
+console.log(getChar(88))
+// Hooray, today I learned about .fromCharCode()!
