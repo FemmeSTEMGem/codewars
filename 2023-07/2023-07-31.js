@@ -40,3 +40,14 @@ function equal5(){
 console.log(equal5())
 console.log(equal4())
 // All very easy, though admittedly the modulo one at the end took a minute longer than I wanted, lol.
+
+
+
+// Complete the function which converts hex number (given as a string) to a decimal number.
+
+function hexToDec(hexString){
+  return parseInt(hexString, 16)
+}
+
+console.log(hexToDec("FF"))
+// The usefulness of the second argument of parseInt() strikes again! Really got to keep this radix thing in mind. This is the second time it's been the simplest and most elegant solution. I can't imagine how many lines of code I'd have to use if I didn't use parseInt() in this solution.
