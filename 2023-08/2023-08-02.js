@@ -24,3 +24,13 @@ return solution
 
 console.log(multiTable(5))
 // Someone had a slightly more elegant solution to the issue of not having \n at the end of the last line. Instead, they turned the last part of the "for" statement into a ternary operation...where they asked if i == 10. If not, it added \n to the end. If not, just an empty string. Love it.
+
+
+// Oh no! Timmy hasn't followed instructions very carefully and forgot how to use the new String Template feature, Help Timmy with his string template so it works as he expects!
+
+function buildString(...template){
+  return `I like ${template.join(', ')}!`
+}
+
+console.log(buildString('Cheese','Milk','Chocolate'))
+// Very simple debug, nothing crazy.
