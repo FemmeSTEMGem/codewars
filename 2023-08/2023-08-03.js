@@ -20,4 +20,4 @@ var replaceDots = function(str) {
 }
 
 console.log(replaceDots("one.two.three"))
-// As simple as this was, today I learned that a period is a special character in regex, so we need to escape it with a backslash (\) to treat it as a literal period. (thanks, ChatGPT!)
+// As simple as this was, today I learned that a period is a special character in regex, so we need to escape it with a backslash (\) to treat it as a literal period. (thanks, ChatGPT!) In the solutions section I also learned that, instead of escaping with a backslash, you can just use square brackets around the period and it'll work just fine.
