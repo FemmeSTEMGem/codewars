@@ -6,3 +6,18 @@ function take(arr, n) {
 
 console.log(take([234, 564, 1, 536, 134, 234, 453, 2534, 6], 4))
 // Simple enough, easy enough. :)
+
+
+// The code provided is supposed replace all the dots . in the specified String with dashes
+// But it's not working properly.
+// Task
+// Fix the bug so we can all go home early.
+// Notes
+// String str will never be null.
+
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');
+}
+
+console.log(replaceDots("one.two.three"))
+// As simple as this was, today I learned that a period is a special character in regex, so we need to escape it with a backslash (\) to treat it as a literal period. (thanks, ChatGPT!)
