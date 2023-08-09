@@ -7,7 +7,7 @@ const flip=(d, a)=>{
   return a.sort((a, b) => d == 'R' ? a - b : b - a)
 }
 
-// console.log(flip('L', [1, 4, 5, 3, 5 ]))
+console.log(flip('L', [1, 4, 5, 3, 5 ]))
 // I'm happy to say that this is probably the best answer. It might be a little messy having the ternary operation inside the .sort() method, but I kinda like it. If I was going for more clarity, I would probably split it up into two different .sort() methods and the ? part of the ternary operation would be whether or not the d == "R" or "L".
 
 
