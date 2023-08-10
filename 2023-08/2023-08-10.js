@@ -25,4 +25,4 @@ function main (verb, noun) {
   return verb + noun
 }
 
-// Simple. Didn't even bother testing, tbh. Maybe a little too simple for this kata leve.
+// Simple. Didn't even bother testing, tbh. Maybe a little too simple for this kata level.
