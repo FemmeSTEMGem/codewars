@@ -17,3 +17,12 @@ function rainAmount(mm){
 
 console.log(rainAmount(39))
 // Simple enough debugging. Did it again a better way just for funzies. ^_^
+
+
+// A student was working on a function and made some syntax mistakes while coding. Help them find their mistakes and fix them.
+
+function main (verb, noun) {
+  return verb + noun
+}
+
+// Simple. Didn't even bother testing, tbh. Maybe a little too simple for this kata leve.
