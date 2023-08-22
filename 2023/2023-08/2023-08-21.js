@@ -23,3 +23,14 @@ function getDrinkByProfession(param){
 
 console.log(getDrinkByProfession("pOLitiCIaN"))
 // There's actually a slightly better version of this that I like more. Intead, they stored the table as an object, then returned the right drink based on the profession, and using an or statement if the profession wasn't "true". Perfect. :)
+
+
+// Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value. 
+// Division by zero should return NaN.
+
+function remainder(n, m){
+  return n > m ? n % m : m % n
+}
+
+console.log(remainder(17, 5))
+// Kinda tried to do modulo manually...got frustrated/annoyed and just used modulo lol.
