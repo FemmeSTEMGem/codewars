@@ -19,7 +19,7 @@ console.log(apple(28))
 
 var Ball = function(ballType) {
   this.ballType = ballType || 'regular';
-};
+}
 
 console.log(new Ball().ballType)
 // I can't remeber the last time I used classes; definitely had to look up some stuff for this one.
