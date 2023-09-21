@@ -24,3 +24,26 @@ console.log(lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"))
 // function lowercaseCount(str){
 //     return (str.match(/[a-z]/g) || []).length
 //   }
+
+
+// `Write a simple regex to validate a username. Allowed characters are:
+//     lowercase letters,
+//     numbers,
+//     underscore
+// Length should be between 4 and 16 characters (both included).`
+
+function validateUsr(username) {
+  return /^[0-9a-z_]{4,16}$/.test(username)
+}
+
+console.log(validateUsr('Hasd_12assssssasasasasasaasasasasas'))
+// I definitely had to look this up. ChatGPT did a really great job of breaking this down:
+// ^[0-9a-z_]{4,16}$: This is a regular expression pattern enclosed within forward slashes (/). It defines the pattern that the username must match for it to be considered valid. Let's break down the components of this pattern:
+
+//     ^: This is the start of the input string anchor. It signifies that the pattern should match from the beginning of the string.
+
+//     [0-9a-z_]: This is a character class (enclosed within square brackets []). It matches any character that is a digit (0-9), lowercase letter (a-z), or an underscore (_).
+
+//     {4,16}: This is a quantifier that specifies the allowed length of the matched string. In this case, it allows the string to be between 4 and 16 characters in length.
+
+//     $: This is the end of the input string anchor. It signifies that the pattern should match until the end of the string.
