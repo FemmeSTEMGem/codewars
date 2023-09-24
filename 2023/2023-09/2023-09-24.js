@@ -26,3 +26,16 @@ console.log(calculator(1,2,"+"))
 console.log(calculator(1,2,"&"))
 console.log(calculator(1,"k","*"))
 // I think I might have become slightly overzealous with my application of regex here (though, hey...it's good practice). I think my favourite version of this is the exact same as mine, but with if ((typeof a == "number") && typeof b == "number"))...I think this is much more clear. An additional happy note, while the solution wouldn't actually work in the real world for this problem, a different answer's use of "try...catch" was cool in terms of a thing I'd never heard of. :D
+
+
+// Remove n exclamation marks in the sentence from left to right. n is positive integer.
+
+function remove(s,n){
+  for (let i = 0; i < n; i++) {
+    s = s.replace("!", "")
+  }
+  return s
+}
+
+console.log(remove("!!!Hi!!!", 4))
+// Once I had the hint that I could use "replace", I was off to the races. It's so funny because I often forget about "replace" because it only replaces the first instance of the thing that it finds...so I've often found it not really useful for anything...until today I guess, lol.
