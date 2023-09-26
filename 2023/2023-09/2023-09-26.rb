@@ -6,3 +6,11 @@ end
 
 # print even_or_odd(6)
 # Totally forgot that in Ruby you can literally just ask .even? and .odd?, lol
+
+
+# This code does not execute properly. Try to figure out why.
+
+def multiply(a, b)
+  return a * b
+end
+# Easy peasy. Didn't bother testing it. But good simple stuff to help get back into Ruby. :)
