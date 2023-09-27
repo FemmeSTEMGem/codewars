@@ -14,3 +14,12 @@ SELECT
 FROM
   cycling
 -- This was a nice reintroduction to SQL. I also vastly prefer structuring it this way for readability
+
+
+-- Write a select statement that takes name from person table and return "Hello, <name> how are you doing today?" results in a column named greeting
+
+SELECT
+  'Hello, ' || name || ' how are you doing today?' AS greeting
+FROM
+  person
+-- Realized in this one that single vs double quotes very much matter in SQL. Also a nice reminder on how to insert into a string.
