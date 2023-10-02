@@ -16,3 +16,17 @@ console.log(shortenToDate("Tuesday January 29, 10pm"))
   // const [date, time] = longDate.split(',');
   // return date;
 // }
+
+
+// Create a function named combineNames that accepts two parameters (first and last name). The function should return the full name.
+// Example:
+// combineNames('James', 'Stevens')
+// returns:
+// 'James Stevens'
+
+function combineNames(first, last) {
+  return `${first} ${last}`
+}
+
+console.log(combineNames('James', 'Stevens'))
+// Very simple kata, though I saw a clever thing that I liked (though impractical for this exercise). It was const combineNames = (...names) => names.join(' '). Not good because there's no way to know how many arguments the function should receive...but maybe kinda good if you include a comment about it since this would also work for multiple names to fit in the argument. I take it back. I think I like this solution better for that flexibility.
