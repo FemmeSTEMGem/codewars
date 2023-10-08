@@ -13,3 +13,18 @@ SELECT
 FROM
   people
 -- Had to look up how to do min/max to remember. Pleased to see that it's just a nice simple function. Annoying that the kata wanted you to alias the items you're selecting; it wasn't super obvious at first and I'm glad I read everything thoroughly.
+
+
+-- For this challenge you need to create a simple DISTINCT statement, you want to find all the unique ages.
+-- people table schema
+--     id
+--     name
+--     age
+-- select table schema
+--     age (distinct)
+
+SELECT
+  DISTINCT age
+FROM
+  people
+-- Cool, learned a new thing, implemented it in a way that I was guessing made sense, and it worked!
