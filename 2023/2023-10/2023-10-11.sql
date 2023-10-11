@@ -16,3 +16,18 @@ SELECT
 FROM
   participants
 -- I learned/releared two things. First, I completely forgot that you need to end a statement with a semi colon before beginning another INSERT or SELECT statement. Second, I also forgot that SQL doesn't fuck with double quotes, only single quotes. It was driving me mad how it wasn't passing the tests. Hopefully that annoyance drills that into my head. ^_^
+
+
+-- For this challenge you need to create a simple SUM statement that will sum all the ages.
+-- people table schema
+--     id
+--     name
+--     age
+-- select table schema
+--     age_sum (sum of ages)
+
+SELECT
+  SUM(age) AS age_sum
+FROM
+  people
+-- Woohoo! I took a stab in the dark on the syntax and it worked!
