@@ -8,3 +8,20 @@ function whoIsPaying(name){
 
 console.log(whoIsPaying(""))
 // Looks like my solution is the most efficient. Woohoo!
+
+
+// I would like to be able to pass an array with two elements to my swapValues function to swap the values. However it appears that the values aren't changing.
+// Can you figure out what's wrong here?
+
+function swapValues(args) {
+  var temp = args[0]; //1
+  args[0] = args[1]; //2
+  args[1] = temp; //1
+  return args
+}
+
+console.log(swapValues([1, 2]))
+// This was a really frustrating one because I don't know why you would ever ask for an argument this way:
+  // var args = Array.prototype.slice.call(arguments)
+// In retrospect, arr.reverse() would have been the simplest, but that unecessary line from before had me thinking way too far beyond the simple answer. I was wracking my brain trying to think this kata was more clever/difficult than it was. Is there seriously a reason for declaring arguments this way?
+// I used ChatGPT to look this up. Apparently, with older JavaScript code, it was much more common to interact with the arguments object directly. This is pre-2009 stuff. So, while the modern conventions that I learned are better, I'm actually pretty okay with stumbling across this since legacy code is a thing that I could come across.
