@@ -17,3 +17,16 @@ Sleigh.prototype.authenticate = function(name, password) {
 };
 
 // Easy peasy. Though the syntax is clearly older and gave me pause about whether or not I'd be able to write out the solution the way I'm used to. I wonder if it's worth it to look into this older syntax for the purposes of having to interact with legacy code.
+
+
+// Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
+// Function:
+// getNumberFromString(s)
+
+function getNumberFromString(s) {
+  return Number(s.split('').filter(a => a <= '9' && a >= '0').join(''))
+}
+
+console.log(getNumberFromString("hell5o wor6ld"))
+// Got bogged down on this one because the language switched to Haskell and I just assumed that it was a really old way of writing Javascript. Once I figured that out, it was pretty okay. I struggled for a while to figure out how to writ this using regex and just gave up. But, in the solutions, I found a cool new thing in regex where you can just be like "hey, filter for digits!". Super cool:
+  // return +s.replace(/\D/g, "");
