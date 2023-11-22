@@ -30,3 +30,4 @@ function getNumberFromString(s) {
 console.log(getNumberFromString("hell5o wor6ld"))
 // Got bogged down on this one because the language switched to Haskell and I just assumed that it was a really old way of writing Javascript. Once I figured that out, it was pretty okay. I struggled for a while to figure out how to writ this using regex and just gave up. But, in the solutions, I found a cool new thing in regex where you can just be like "hey, filter for digits!". Super cool:
   // return +s.replace(/\D/g, "");
+  // As for the + symbol in front: The unary plus operator precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn't already.
