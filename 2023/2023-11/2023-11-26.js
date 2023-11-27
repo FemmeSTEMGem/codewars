@@ -11,16 +11,21 @@ function converter (mpg) {
 
 console.log(converter(10))
 // 3.54
+// This one was a bit annoying because the person who wrote it didn't specify how accurate it needed to be - so it took a while to drill down on that.
 
 
 // You're on your way to the market when you hear beautiful music coming from a nearby street performer. The notes come together like you wouln't believe as the musician puts together patterns of tunes. As you wonder what kind of algorithm you could use to shift octaves by 8 pitches or something silly like that, it dawns on you that you have been watching the musician for some 10 odd minutes. You ask, "how much do people normally tip for something like this?" The artist looks up. "It's always gonna be about tree fiddy."
-
 // It was then that you realize the musician was a 400 foot tall beast from the paleolithic era! The Loch Ness Monster almost tricked you!
-
 // There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A) it is a 400 foot tall beast from the paleolithic era; B) it will ask you for tree fiddy.
-
 // Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. Note that the phrase can also be written as "3.50" or "three fifty". Your function should return true if you're talking with The Loch Ness Moster, false otherwise.
 
 function isLockNessMonster(s) {
-  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+  return s.includes("tree fiddy") || s.includes("3.50")
 }
+
+console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree fiddy"))
+console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to zero."))
+console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to $3.50"))
+// This one was nice and easy, but I was pleased to learn that there's a regex way of doing this:
+  // /tree fiddy|3.50/.test(s)
+// So very cool. I'd love to use this in the future if I can remember it.
