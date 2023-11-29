@@ -21,3 +21,12 @@ function calculateTip(amount, rating) {
   : "Rating not recognised"
 }
 // Nice to use ternary operators like this again after a while. If I were using this in the real wold, though, I'd probably have an object that would hold the values of the ratings as keys and the tip percentages as the values.
+
+
+// Get ASCII value of a character.
+// For the ASCII table you can refer to http://www.asciitable.com/
+
+function getASCII(c){
+  return c.charCodeAt()
+}
+// Definitely had to look up the name of the method, but I remembered that there was something specific for this. ^_^
