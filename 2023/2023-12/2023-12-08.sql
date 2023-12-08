@@ -12,3 +12,16 @@ SELECT
 FROM
   years
 -- Interesting that 100 didn't work but 100.00 did. The comments were unhelpful so I'll have to go looking around for the answer.
+
+
+-- Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers.
+-- You will be given a table 'kata' with columns 'id', 'n', 'x', and 'y'. 
+-- Return the 'id' and your result in a column named 'res' using a SELECT statement.
+-- You DON'T need to create a function, that's for other languages.
+
+SELECT
+  id,
+  n % x = 0 AND n % y = 0 AS res
+FROM
+  kata
+-- I'd forgotten that AND needs to be used istead of && in SQL. Otherwise, I got it! :)
