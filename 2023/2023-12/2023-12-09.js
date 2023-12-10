@@ -31,3 +31,9 @@ class Ship {
   }  
 }
 // This was actually a really nice exercise to do because I hadn't set up a new class in a while; let alone one with a method in it. I did pretty well, just needed a refresher on some of the syntax.
+
+
+// This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
+
+const solve = (x, y) => x / y
+// This is too easy for a 8kyu kata, lol
