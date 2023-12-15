@@ -25,3 +25,29 @@ String.prototype.digit = function() {
 //     '14'.digit() failed for the same reason; the regular expression is looking for a single digit, but the string contains two digits.
 
 // By using ^ and $, you ensure that the regular expression matches the entire string and not just a part of it, making the function behave as intended for the specified problem.
+
+
+
+// Finish the uefaEuro2016() function so it return string just like in the examples below:
+// uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
+// uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
+// uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
+
+function uefaEuro2016(teams, scores){
+  let result = scores[0] > scores[1] ? `${teams[0]} won!` :
+  scores[0] < scores[1] ? `${teams[1]} won!` :
+  `teams played draw.`
+
+  return `At match ${teams[0]} - ${teams[1]}, ${result}`
+}
+// My solution works well and I think is one of the tidiest of the bunch. But I think I like this other person's a little more. It's longer, but I think a lot easier to read:
+
+function uefaEuro2016(teams, scores) {
+  const [team1, team2] = teams
+  const [score1, score2] = scores
+  const winner = score1 > score2 ? team1 : team2
+
+  return score1 === score2
+      ? `At match ${team1} - ${team2}, teams played draw.`
+      : `At match ${team1} - ${team2}, ${winner} won!`
+}
