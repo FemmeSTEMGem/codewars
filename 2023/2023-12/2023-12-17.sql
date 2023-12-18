@@ -21,3 +21,16 @@ FROM
     --     The third argument is the string '000011111', which represents the replacement characters.
 
     -- So, any digit from 1 to 4 in the 'x' column will be replaced with '0', and any digit from 5 to 9 will be replaced with '1'.
+
+
+
+-- Write a function which converts the input string to uppercase.
+--# write your SQL statement here: you are given a table 'makeuppercase' with column 's', return a table with column 's' and your result in a column named 'res'.
+
+SELECT
+  s,
+  UPPER(s) AS res
+FROM
+  makeuppercase
+
+-- Gah, finally a nice simple one to help after the first tricky one.
