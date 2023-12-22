@@ -11,3 +11,14 @@ SELECT
 FROM
   zerofuel
 -- This was pretty annoying because there's an issue with the kata where, if you do the math slightly differently, it says that there are a different number of columns than expected. Very fruestrating.
+
+
+-- Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+-- # write your SQL statement here: you are given a table 'removeexclamationmarks' with column 's', return a table with column 's' and your result in a column named 'res'.
+
+SELECT
+  s,
+  REPLACE(s, '!', '') AS res
+FROM
+  removeexclamationmarks
+-- Gahhhhhhh! I keep forgetting that SQL doesn't play nicely with double quotes and can only handle single quotes. Literally the only reason this was a struggle...thought I was losing my mind.
