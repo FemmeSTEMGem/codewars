@@ -15,3 +15,18 @@ SELECT
 FROM
   quarterof
 -- There's definitely more mathy and simple ways to write this, but a lot of those were voted more as clever than best practices...likely because it's a bit unclear what it's supposed to be doing if you're playing code golf with this one.
+
+
+-- You are given two interior angles (in degrees) of a triangle.
+-- Write a function to return the 3rd.
+-- Note: only positive integers will be tested.
+-- you are given a table 'otherangle' with columns 'a' and 'b'.
+-- return a table with these columns and your result in a column named 'res'.
+
+SELECT
+  a,
+  b,
+  180 - a - b AS res
+FROM
+  otherangle
+-- Oh man...such a dumb reason for struggling with this one. I read the problem as needing to find the length of the third side of the triangle, not the angle of the third angle of the triangle. -_- Shouldn't try to code at 1am while sick, lol.
