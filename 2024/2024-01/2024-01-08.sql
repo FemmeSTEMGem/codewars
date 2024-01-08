@@ -19,3 +19,20 @@ WHERE country != 'Canada' AND country != 'Mexico' AND country != 'USA'
   -- WHERE country NOT IN ('Canada', 'Mexico', 'USA)
   -- MySQL NOT IN() makes sure that the expression proceeded does not have any of the values present in the arguments. It's used to replace a group of arguments using the <> (or !=) operator that are combined with an AND. It can make code easier to read and understand for SELECT, UPDATE or DELETE SQL commands. Generally, it will not change performance characteristics.
   -- Think of it as "not included". Consequently, there is an IN() method in SQL as well.
+
+
+-- You are working for a local school, and you are responsible for collecting tuition from students. You have a list of all students, some of them have already paid tution and some haven't. Write a select statement to get a list of all students who haven't paid their tuition yet. The list should include all the data available about these students.
+-- students table schema
+--     name (string)
+--     age (integer)
+--     semester (integer)
+--     mentor (string)
+--     tuition_received (Boolean)
+
+SELECT
+  *
+FROM
+  students
+WHERE
+  tuition_received = false
+-- From the other answers, it looks like I could have also written WHERE NOT tuition_received, but I like mine better because it flows with spoken human language better.
