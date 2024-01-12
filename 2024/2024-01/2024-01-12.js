@@ -36,3 +36,31 @@
     //   return rs;
     // }
   // Basically the same thing, but shorter and still clear. Perfect!
+
+
+  // Given a number n, draw stairs using the letter "I", n tall and n wide, with the tallest in the top left.
+// For example n = 3 result in:
+// "I\n I\n  I"
+// or printed:
+// I
+//  I
+//   I
+// Another example, a 7-step stairs should be drawn like this:
+// I
+//  I
+//   I
+//    I
+//     I
+//      I
+//       I
+
+function drawStairs(n) {
+  let result = []; 
+  for (let i = 0; i < n; i++) {
+    result[i] = `${' '.repeat(i)}I`;
+  }
+  return result.join('\n');
+}
+
+console.log(drawStairs(3))
+// Kept looking for a .times() like Ruby does and annoyingly only found other suggestions that weren't .repeat(). Took forever because I couldn't remember .repeat() and weirdly took a while to find through Googling. -_-
