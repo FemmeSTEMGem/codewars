@@ -15,3 +15,21 @@ function integrate(coefficient, exponent) {
   return `${coefficient / (exponent+1)}x^${exponent+1}`
 }
 // Might be a bit tidier with + instead of ${}, but this is fine, I think.
+
+
+// Create a function close_compare that accepts 3 parameters: a, b, and an optional margin. The function should return whether a is lower than, close to, or higher than b.
+// Please note the following:
+//     When a is close to b, return 0.
+//         For this challenge, a is considered "close to" b if margin is greater than or equal to the absolute distance between a and b.
+// Otherwise...
+//     When a is less than b, return -1.
+//     When a is greater than b, return 1.
+// If margin is not given, treat it as if it were zero.
+// Assume: margin >= 0
+
+function closeCompare(a, b, margin = 0) {
+  if (a < b - margin) return -1;
+  if (a - margin > b) return 1;
+  return 0;
+}
+// I was trying to hard to shoehorn this into a ternary operator thingy, but my brain won't do it. I'm officially out of juice for the day and I don't care about the mental exercise enough to force it. Blehhhhhh.
