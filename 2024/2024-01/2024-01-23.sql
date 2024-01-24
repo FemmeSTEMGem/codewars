@@ -22,3 +22,18 @@ FROM
   counter
 ORDER BY x, n
 -- I absolutely had to look up the answer for this one because I was only able to find one of the sql methods I ended up needing. I found array_agg fairly easily, but I couldn't figure out how to push things into the array. I wasn't able to get very far from there because I didn't realize that you could just nest inside array_agg with another SELECT statement. I'm still a little wobbly on the syntax, but at least I can understand it. This is also my first time seeing a nested SELECT statement. Oof!
+
+
+-- Create a simple SELECT query to display student information of all ACTIVE students.
+-- TABLE STRUCTURE:
+-- students
+-- Id (integer) 	FirstName (text) 	LastName (text) 	IsActive (boolean)
+-- Note:
+--     IsActive (true = 1 or false = 0)
+
+SELECT
+  *
+FROM
+  students
+WHERE
+  IsActive
