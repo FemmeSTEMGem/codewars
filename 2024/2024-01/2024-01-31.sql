@@ -133,3 +133,22 @@ FROM
   sub_sum
 -- This is a trolling math problem rather than a coding thing...which is kind've shitty to put on a lower level problem where the only people interacting with it are going to be beginners. Might've been okay if there'd been a better hint at this at the beginning.
 -- No matter what n is, as long as it's above 9, all results will be divisible by 9. All the numbers in the table that are divisible by 9 are 'apple', so that's all you need to return
+
+
+-- Return the number (count) of vowels in the given string.
+-- We will consider a, e, i, o, u as vowels for this Kata (but not y).
+-- The input string will only consist of lower case letters and/or spaces.
+-- # write your SQL statement here: you are given a table 'getcount' with column 'str', return a table with column 'str' and your result in a column named 'res'.
+
+SELECT
+  str,
+  REGEXP_COUNT(str, '[aeiou]') AS res
+FROM
+  getcount
+
+SELECT
+  str,
+  LENGTH(REGEXP_REPLACE(str, '[aeiou]', '', 'g')) AS res
+FROM
+  getcount
+-- My first one would have worked, but the test is using Postgres 13.0 and REGEXP_Count wasn't introduced until Postgres 15.0
